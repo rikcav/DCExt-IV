@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  db-postgres-dcex:
+    image: postgres:alpine
+    ports:
+      - "5439:5432"
+    container_name: "db-postgres-dcex"
+    restart: always
+    volumes:
+      - ./db-postgres-dcex:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: password
+volumes:
+  db-postgres-dcex:
