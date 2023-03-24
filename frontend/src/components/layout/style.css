@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    height:10%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 75px;
+    background-color: #274E87;
+}
+
+.navbar p {
+    margin: 0;
+    font-size: 30px;
+    padding-left: 20px;
+    margin-left: 10px; /* Add a 10px margin to the right */
+    color: aliceblue;
+    font-weight: 400;
+  }
+  
+
+body {
+    margin: 0;
+  }
