@@ -1,6 +1,6 @@
+
 body {
     margin: 0;
-    padding-bottom: 100px;
     background-color: #0F1C3D;
 
 
@@ -34,9 +34,6 @@ body {
     padding-right: 150px;
     padding-left: 150px;
     color: aliceblue;
-   
-
-
   }
   .footer{
     position: absolute;
@@ -47,17 +44,17 @@ body {
   
 
 .footer img{
-    width: 150px; 
+    width: 100px; 
     height: auto; 
-    padding-top: 10px;
-    padding-bottom: 1   0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 31px;
   }
 
   .circle-row {
     display: flex;
     justify-content:space-evenly;
-    padding-top: 150px;
+    padding-top: 60px;
   }
   
   .circle {
@@ -72,4 +69,45 @@ body {
   
   .blue {
     background-color: #274E87;
+
   }
+
+  .circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .description {
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 10px;
+  }
+  
+.blue img{
+  height: 100px;
+  padding-top: 45px;
+  
+}
+
+.red img{
+  height: 100px;
+  padding-top: 45px;
+
+}
+
+.red:hover{
+  cursor: pointer;
+  opacity: 0.8; 
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out; 
+}
+
+.blue:hover{
+  cursor: pointer;
+  opacity: 0.8; 
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+
+}
