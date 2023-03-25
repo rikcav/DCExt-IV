@@ -66,12 +66,17 @@ body {
   .red {
     background-color: #DD3B3B;
     transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .blue {
     background-color: #274E87;
     transition: transform 0.3s ease-in-out;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .circle-container {
@@ -89,13 +94,12 @@ body {
   
 .blue img{
   height: 100px;
-  padding-top: 45px;
-  
+  padding-bottom: 10px;
 }
 
 .red img{
   height: 100px;
-  padding-top: 45px;
+  padding-bottom: 10px;
 
 }
 
