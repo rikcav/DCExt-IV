@@ -14,13 +14,13 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    height: 75px;
+    height: 50px;
     background-color: #274E87;
   }
   
   .navbar p {
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 31px;
     margin-left: 10px;
     color: aliceblue;
@@ -89,7 +89,7 @@ body {
     font-size: 25px;
     text-align: center;
     color: aliceblue;
-    margin-top: 10px;
+    margin-top: 20px;
   }
   
 .blue img{
