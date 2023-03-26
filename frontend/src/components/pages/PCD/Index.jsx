@@ -4,6 +4,7 @@ import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
 import './Style.css';
 import SearchBar from '../../layout/Searchbar';
+import Table from '../../layout/Table';
 function PCD() {
     const props = {
         description: "PCD",
@@ -16,6 +17,7 @@ function PCD() {
     <body id="page4">
       <Navbar />
       <Description {...props}/>
+      <Table/>
       <SearchBar/>
       <Footer />
     </body>
