@@ -16,14 +16,11 @@ body {
   
 }
 
-.navbar p {
+.navbar img {
   margin: 0;
-  font-size: 30px;
-  font-size: 25px;
+  margin-top: 5px;
   padding-left: 31px;
   margin-left: 10px;
-  color: aliceblue;
-  font-weight: 400;
 }
 
 .body{
