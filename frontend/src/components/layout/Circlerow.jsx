@@ -19,7 +19,7 @@ function CircleRow() {
       </a>
       <a href="/tdah" className='circle-container'>
         <div className="circle red">
-          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1089575581915553832/spaceship-clipart-silhouette-3.png' alt="TDAH"/>
+          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png' alt="TDAH"/>
         </div>
         <p className="description">TDAH</p>
       </a>

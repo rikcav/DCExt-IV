@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from "../src/components/pages/home/index";
+import Home from "./components/pages/home/Index";
 import Autismo from "./components/pages/Autismo/Index";
 import Idosos from "../src/components/pages/Idosos/Index";
 import PCD from './components/pages/PCD/Index';
