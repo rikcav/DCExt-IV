@@ -17,19 +17,17 @@ function CircleRow() {
         </div>
         <p className="description">Idosos</p>
       </a>
-
+      <a href="/tdah" className='circle-container'>
+        <div className="circle red">
+          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1089575581915553832/spaceship-clipart-silhouette-3.png' alt="TDAH"/>
+        </div>
+        <p className="description">TDAH</p>
+      </a>
       <a href="/autismo" className='circle-container'>
-        <div className="circle blue">
+        <div className="circle blue last">
           <img src='https://cdn.discordapp.com/attachments/440326168491720705/1088974668494540830/image-removebg-preview_4.png' alt="Autismo"/>
         </div>
         <p className="description">Autismo</p>
-      </a>
-
-      <a href="/tdah" className='circle-container'>
-        <div className="circle red last">
-          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1088974668494540830/image-removebg-preview_4.png' alt="TDAH"/>
-        </div>
-        <p className="description">TDAH</p>
       </a>
     </div>
   );
