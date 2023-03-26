@@ -1,9 +1,7 @@
 body {
   margin: 0;
 }
-#page1{
-  background-color: #0F1C3D;
-}
+
 
 .navbar{
   display: flex;

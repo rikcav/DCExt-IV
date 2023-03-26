@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Navbar from '../../layout/Navbar';
 import Footer from '../../layout/Footer';
 import CircleRow from '../../layout/CircleRow';
-import Style from  "./style.css?inline"
+import './style.css';
 function Home() {
     return (
       <body id="page1">
