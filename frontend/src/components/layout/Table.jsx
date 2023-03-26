@@ -3,7 +3,7 @@ import './Style.css';
 
 function Table() {
     return(
-        <div>
+        <div className='div-table'>
             <table className="table">
                 <thead>
                     <tr>

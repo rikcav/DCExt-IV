@@ -17,8 +17,8 @@ function PCD() {
     <body id="page4">
       <Navbar />
       <Description {...props}/>
-      <Table/>
       <SearchBar/>
+      <Table/>
       <Footer />
     </body>
   );

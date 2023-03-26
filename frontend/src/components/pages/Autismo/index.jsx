@@ -18,8 +18,8 @@ function Autismo() {
     <body id="page2">
       <Navbar />
       <Description {...props}/>
-      <Table/>
       <SearchBar/>
+      <Table/>
       <Footer />
     </body>
   );

@@ -17,8 +17,8 @@ function Idosos() {
     <body id="page3">
       <Navbar />
       <Description {...props}/>
-      <Table/>
       <SearchBar/>
+      <Table/>
       <Footer />
     </body>
   );
