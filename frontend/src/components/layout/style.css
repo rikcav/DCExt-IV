@@ -1,8 +1,8 @@
 body {
   margin: 0;
+}
+#page1{
   background-color: #0F1C3D;
-
-
 }
 
 .navbar{
@@ -16,6 +16,7 @@ body {
   height: 75px;
   height: 50px;
   background-color: #274E87;
+  
 }
 
 .navbar p {
@@ -30,24 +31,34 @@ body {
 
 .body{
   font-weight: bold;
-  font-size: 25px;;
+  font-size: 25px;
   text-align: center;
   padding-right: 150px;
   padding-left: 150px;
   color: aliceblue;
+  font-family: 'Raleway', sans-serif;
 }
 .footer{
   position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #D9D9D9;
+  height: 100px;
+}
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
+#root {
+  min-height: 100%;
+  position: relative;
+}
 
 .footer img{
   width: 100px; 
   height: auto; 
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 15px;
   padding-left: 31px;
 }
@@ -56,6 +67,7 @@ body {
   display: flex;
   justify-content:space-evenly;
   padding-top: 60px;
+  padding-bottom: 70px;
 }
 
 .circle {
@@ -83,7 +95,6 @@ body {
 .circle-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .description {
@@ -92,6 +103,7 @@ body {
   color: aliceblue;
   margin-top: 10px;
   margin-top: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .blue img{
@@ -113,12 +125,34 @@ transition: all 0.3s ease-in-out;
 }
 
 .blue:hover{
-cursor: pointer;
-opacity: 0.8; 
-transform: scale(1.2);
-transition: all 0.3s ease-in-out;
-
-}
+  cursor: pointer;
+  opacity: 0.8; 
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  
+  }
 a{
 text-decoration: none;
+}
+.search-bar{
+  text-align: center;
+  
+  
+}
+
+.search-bar input{
+  text-align:center;
+  font-family: 'Raleway', sans-serif;   
+  outline-width: 0;
+  border: none;
+  color: gray;
+  background-color: #EFEBEB;
+  border-radius: 50px;
+  padding: 3px;
+  width: 25%;
+  height: 30px;
+  margin: 5%;
+  font-weight: bold;
+  margin-bottom: 250px;
+
 }
