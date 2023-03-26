@@ -17,8 +17,8 @@ function TDAH() {
     <body id="page5">
       <Navbar />
       <Description {...props}/>
-      <Table/>
       <SearchBar/>
+      <Table/>
       <Footer />
     </body>
   );
