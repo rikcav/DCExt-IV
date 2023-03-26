@@ -4,6 +4,7 @@ import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
 import './style.css';
 import SearchBar from '../../layout/Searchbar';
+import Table from '../../layout/Table';
 function Autismo() {
     const props = {
         description: "Autismo",
@@ -17,6 +18,7 @@ function Autismo() {
     <body id="page2">
       <Navbar />
       <Description {...props}/>
+      <Table/>
       <SearchBar/>
       <Footer />
     </body>

@@ -4,6 +4,7 @@ import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
 import './Style.css';
 import SearchBar from '../../layout/Searchbar';
+import Table from '../../layout/Table';
 function Idosos() {
     const props = {
         description: "Idosos",
@@ -16,6 +17,7 @@ function Idosos() {
     <body id="page3">
       <Navbar />
       <Description {...props}/>
+      <Table/>
       <SearchBar/>
       <Footer />
     </body>

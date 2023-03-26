@@ -141,11 +141,59 @@ text-decoration: none;
   border: none;
   color: gray;
   background-color: #EFEBEB;
-  border-radius: 50px;
+  border-radius: 20px;
   padding: 3px;
   width: 25%;
   height: 30px;
   margin: 5%;
   font-weight: bold;
   margin-bottom: 250px;
+}
+
+.table button {
+  background-color: #274E87;
+  color: white;
+  border: 0;
+  outline: 0;
+  box-shadow: 0;
+  border-radius: 20px;
+}
+
+.table button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 400px;
+  background-color: #EFEBEB;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.table thead tr {
+  background-color: #274E87;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #DDDDDD;
+  font-family: 'Raleway', sans-serif;
+}
+
+.table tbody tr button {
+  width: 100px;
+  height: 35px;
+  font-weight: bold;
 }
