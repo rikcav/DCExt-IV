@@ -203,3 +203,23 @@ text-decoration: none;
   width: 100%;
   justify-content: center;
 }
+
+.modalBackground {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c8c8c8;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.modalBox {
+  width: 500px;
+  height: 500px;
+  border-radius: 22px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}

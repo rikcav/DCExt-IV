@@ -1,16 +1,17 @@
 import React from 'react';
 import './Style.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import Modal from '../layout/Modal';
 
 function Table({ valor }) {
 
-    useEffect(() => {
-        console.log(valor.length);
-    }, [valor])
+    const [openModal, setOpenModal] = useState(false);
 
     return(
         <div className='div-table'>
-            <table className="table">
+            {openModal ? <Modal closeModal={setOpenModal}/>
+                : <div>
+                    <table className="table">
                 <thead>
                     <tr>
                         <th>Tipo</th>
@@ -29,7 +30,9 @@ function Table({ valor }) {
                             <td>{data.descricao}</td>
                             <td>{data.categoria}</td>
                             <td>
-                                <button>Abrir</button>
+                                <button onClick={() => {
+                                    setOpenModal(true);
+                                }}>Abrir</button>
                             </td>
                         </tr>
                         ) : <tr>
@@ -37,7 +40,9 @@ function Table({ valor }) {
                         </tr>
                     }
                 </tbody>
-            </table>         
+            </table>  
+                </div>
+            }   
         </div>
     )
 }
