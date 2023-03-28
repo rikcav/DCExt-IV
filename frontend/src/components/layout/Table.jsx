@@ -1,7 +1,13 @@
 import React from 'react';
 import './Style.css';
+import { useEffect, useState } from 'react';
 
-function Table() {
+function Table({ valor }) {
+
+    useEffect(() => {
+        console.log(valor.length);
+    }, [valor])
+
     return(
         <div className='div-table'>
             <table className="table">
@@ -15,69 +21,21 @@ function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
+                    {
+                        valor?.length ? valor.map((data, index) =>
+                        <tr key={index}>
+                            <td>{data.tipo}</td>
+                            <td>{data.nome}</td>
+                            <td>{data.descricao}</td>
+                            <td>{data.categoria}</td>
+                            <td>
+                                <button>Abrir</button>
+                            </td>
+                        </tr>
+                        ) : <tr>
+                            <td>Nada</td>
+                        </tr>
+                    }
                 </tbody>
             </table>         
         </div>

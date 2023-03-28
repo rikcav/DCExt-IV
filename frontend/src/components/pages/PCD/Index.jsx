@@ -6,6 +6,26 @@ import './Style.css';
 import SearchBar from '../../layout/Searchbar';
 import Table from '../../layout/Table';
 function PCD() {
+
+  const valor = {
+    "conteudo" : [
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+    ]
+  }
+
     const props = {
         description: "PCD",
         imageUrl: "https://cdn.discordapp.com/attachments/440326168491720705/1088971888388231270/image.png",
@@ -18,7 +38,7 @@ function PCD() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
-      <Table/>
+      <Table valor={valor.conteudo}/>
       <Footer />
     </body>
   );
