@@ -1,10 +1,17 @@
 import React from 'react';
 import './Style.css';
+import { useState } from 'react';
+import Modal from '../layout/Modal';
 
-function Table() {
+function Table({ valor }) {
+
+    const [openModal, setOpenModal] = useState(false);
+
     return(
         <div className='div-table'>
-            <table className="table">
+            {openModal ? <Modal closeModal={setOpenModal}/>
+                : <div>
+                    <table className="table">
                 <thead>
                     <tr>
                         <th>Tipo</th>
@@ -15,71 +22,27 @@ function Table() {
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>Lorem Ipsum</td>
-                        <td>
-                            <button>Abrir</button>
-                        </td>
-                    </tr>
+                    {
+                        valor?.length ? valor.map((data, index) =>
+                        <tr key={index}>
+                            <td>{data.tipo}</td>
+                            <td>{data.nome}</td>
+                            <td>{data.descricao}</td>
+                            <td>{data.categoria}</td>
+                            <td>
+                                <button onClick={() => {
+                                    setOpenModal(true);
+                                }}>Abrir</button>
+                            </td>
+                        </tr>
+                        ) : <tr>
+                            <td>Nada</td>
+                        </tr>
+                    }
                 </tbody>
-            </table>         
+            </table>  
+                </div>
+            }   
         </div>
     )
 }

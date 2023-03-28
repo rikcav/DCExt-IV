@@ -6,6 +6,28 @@ import './Style.css';
 import SearchBar from '../../layout/Searchbar';
 import Table from '../../layout/Table';
 function Idosos() {
+  const valor = {
+    "conteudo" : [
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+    ]
+  }
+
     const props = {
         description: "Idosos",
         imageUrl: "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png",
@@ -18,7 +40,7 @@ function Idosos() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
-      <Table/>
+      <Table valor={valor.conteudo}/>
       <Footer />
     </body>
   );
