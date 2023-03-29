@@ -52,6 +52,10 @@
     font-family: 'Raleway', sans-serif;
     padding-right: 30px;
   }
+
+  .desc2 {
+    max-width: 70%;
+  }
   
   hr {
     border: 1px solid #274E87;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Style.css';
+import './style.css';
 
 function About(props) {
     const circleClass = `circle ${props.circleColor}`;
