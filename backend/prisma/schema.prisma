@@ -9,3 +9,28 @@ datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
+model Game {
+  id                Int                 @id @default(autoincrement())
+  name              String
+  description       String
+  categories        Category[]
+  link              String?
+  CategoriesOnGames CategoriesOnGames[]
+}
+
+model Category {
+  id                Int                 @id @default(autoincrement())
+  name              String
+  games             Game[]
+  CategoriesOnGames CategoriesOnGames[]
+}
+
+model CategoriesOnGames {
+  game       Game     @relation(fields: [gameId], references: [id])
+  gameId     Int
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId Int
+
+  @@id([gameId, categoryId])
+}
