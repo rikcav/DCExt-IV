@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navbar from '../../layout/Navbar';
+import Navbar from '../../layout/navbar';
 import Footer from '../../layout/Footer';
-import CircleRow from '../../layout/CircleRow';
+import CircleRow from '../../layout/Circlerow';
 import './style.css';
 function Home() {
     return (

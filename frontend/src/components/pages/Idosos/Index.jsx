@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from '../../layout/Navbar';
+import Navbar from '../../layout/navbar';
 import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
-import './Style.css';
-import SearchBar from '../../layout/Searchbar';
+import './style.css';
+import SearchBar from '../../layout/searchbar';
 import Table from '../../layout/Table';
 function Idosos() {
   const valor = {
