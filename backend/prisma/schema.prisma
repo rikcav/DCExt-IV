@@ -10,3 +10,34 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Autism {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
+}
+
+model Elder {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
+}
+
+model Disabled {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
+}
+
+model ADHD {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
+}
