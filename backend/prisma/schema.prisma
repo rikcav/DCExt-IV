@@ -10,27 +10,34 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Game {
-  id                Int                 @id @default(autoincrement())
-  name              String
-  description       String
-  categories        Category[]
-  link              String?
-  CategoriesOnGames CategoriesOnGames[]
+model Autism {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
 }
 
-model Category {
-  id                Int                 @id @default(autoincrement())
-  name              String
-  games             Game[]
-  CategoriesOnGames CategoriesOnGames[]
+model Elder {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
 }
 
-model CategoriesOnGames {
-  game       Game     @relation(fields: [gameId], references: [id])
-  gameId     Int
-  category   Category @relation(fields: [categoryId], references: [id])
-  categoryId Int
+model Disabled {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
+}
 
-  @@id([gameId, categoryId])
+model ADHD {
+  id          Int    @id @default(autoincrement())
+  type        String
+  name        String
+  description String
+  category    String
 }
