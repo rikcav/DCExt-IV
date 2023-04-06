@@ -1,20 +1,20 @@
-import Prisma, { prisma } from "../services/prisma.js";
+import { prisma } from "../services/prisma.js";
 
-exports.createElder = async (data) => {
+export const createElder = async (data) => {
   const elder = await prisma.elder.create({
     data
   });
   return elder;
 };
 
-exports.getById = async (id) => {
+export const getById = async (id) => {
   const elder = await prisma.elder.findUnique({
     where: id,
   });
   return elder;
 };
 
-exports.getAll = async () => {
+export const getAll = async () => {
   const allElder = await prisma.elder.findMany();
   return allElder;
 };

@@ -1,20 +1,20 @@
-import Prisma, { prisma } from "../services/prisma.js";
+import { prisma } from "../services/prisma.js";
 
-exports.createAutism = async (data) => {
+export const createAutism = async (data) => {
   const autism = await prisma.autism.create({
     data
   });
   return autism;
 };
 
-exports.getById = async (id) => {
+export const getById = async (id) => {
   const autism = await prisma.autism.findUnique({
     where: id,
   });
   return autism;
 };
 
-exports.getAll = async () => {
+export const getAll = async () => {
   const allAutism = await prisma.autism.findMany();
   return allAutism;
 };
