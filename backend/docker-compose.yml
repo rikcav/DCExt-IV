@@ -10,7 +10,7 @@ services:
     volumes:
       - ./db-postgres-dcex:/var/lib/postgresql/data
     environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: password
+      POSTGRES_USER: admuser
+      POSTGRES_PASSWORD: admuser
 volumes:
   db-postgres-dcex:

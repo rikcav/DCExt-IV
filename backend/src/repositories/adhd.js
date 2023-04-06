@@ -1,4 +1,4 @@
-import Prisma, { prisma } from "../services/prisma.js";
+import { prisma } from "../services/prisma.js";
 
 exports.createAdhd = async (data) => {
   const adhd = await prisma.adhd.create(data);
