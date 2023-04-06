@@ -1,7 +1,9 @@
 import Prisma, { prisma } from "../services/prisma.js";
 
 exports.createElder = async (data) => {
-  const elder = await prisma.elder.create(data);
+  const elder = await prisma.elder.create({
+    data
+  });
   return elder;
 };
 

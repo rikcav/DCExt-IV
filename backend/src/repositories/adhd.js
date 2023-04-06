@@ -1,7 +1,9 @@
 import { prisma } from "../services/prisma.js";
 
 export const createAdhd = async (data) => {
-  const adhd = await prisma.aDHD.create(data);
+  const adhd = await prisma.aDHD.create({
+    data
+  });
   return adhd;
 };
 

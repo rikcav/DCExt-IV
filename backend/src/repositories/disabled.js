@@ -1,7 +1,9 @@
 import Prisma, { prisma } from "../services/prisma.js";
 
 exports.createDisabled = async (data) => {
-  const disabled = await prisma.disabled.create(data);
+  const disabled = await prisma.disabled.create({
+    data
+  });
   return disabled;
 };
 

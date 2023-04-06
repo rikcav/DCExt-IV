@@ -1,7 +1,9 @@
 import Prisma, { prisma } from "../services/prisma.js";
 
 exports.createAutism = async (data) => {
-  const autism = await prisma.autism.create(data);
+  const autism = await prisma.autism.create({
+    data
+  });
   return autism;
 };
 
