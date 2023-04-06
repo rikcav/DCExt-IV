@@ -7,14 +7,14 @@ export const createAdhd = async (data) => {
   return adhd;
 };
 
-exports.getById = async (id) => {
+export const getById = async (id) => {
   const adhd = await prisma.aDHD.findUnique({
     where: id,
   });
   return adhd;
 };
 
-exports.getAll = async () => {
+export const getAll = async () => {
   const allAdhd = await prisma.aDHD.findMany();
   return allAdhd;
 };
