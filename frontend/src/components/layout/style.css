@@ -149,77 +149,77 @@ text-decoration: none;
   font-weight: bold;
 }
 
-.table button {
-  background-color: #274E87;
-  color: white;
-  border: 0;
-  outline: 0;
-  box-shadow: 0;
-  border-radius: 20px;
-}
-
-.table button:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
-.table {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  min-width: 400px;
+.card {
   background-color: #EFEBEB;
   border-radius: 20px;
-  overflow: hidden;
-  margin-bottom: 200px;
-}
-
-.table thead tr {
-  background-color: #274E87;
-  color: white;
-  font-weight: bold;
-  font-family: 'Raleway', sans-serif;
-  text-align: left;
-}
-
-.table td, .table th {
-  padding: 12px 15px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.table tbody tr {
-  border-bottom: 1px solid #DDDDDD;
-  font-family: 'Raleway', sans-serif;
-}
-
-.table tbody tr button {
-  width: 100px;
-  height: 35px;
-  font-weight: bold;
-}
-
-.div-table {
+  width: 50rem;
   display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.card .content {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  justify-content: center;
-}
-
-.modalBackground {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 200px;
 }
 
-.modalBox {
-  width: 500px;
-  height: 300px;
-  border-radius: 22px;
-  background-color: white;
+.card .title span {
+  font-size: 25px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.card .category {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card .category span {
+  font-size: 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
+.card .category .span-category {
+  font-size: 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.card .link a {
+  font-size: 15px;
+  color: #274E87;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card .body-card {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  box-shadow:0 1px 2px rgba(0,0,0,0.07),0 2px 4px rgba(0,0,0,0.07),0 4px 8px rgba(0,0,0,0.07),0 8px 16px rgba(0,0,0,0.07),0 16px 32px rgba(0,0,0,0.07),0 32px 64px rgba(0,0,0,0.07);
+  width: 70%;
+}
+
+.card .body-card p {
+  font-size: 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+.card .image img {
+  width: 140px;
+  height: 140px;
+  border-radius: 20px;
+  margin-right: 40px;
 }

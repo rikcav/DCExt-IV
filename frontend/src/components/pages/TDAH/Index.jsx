@@ -4,28 +4,30 @@ import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
 import './style.css';
 import SearchBar from '../../layout/searchbar';
-import Table from '../../layout/Table';
+import Card from '../../layout/Card';
 function TDAH() {
 
   const valor = {
     "conteudo" : [
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum TDAH", "descricao" : "Lorem Ipsum TDAH", "categoria" : "Lorem Ipsum TDAH", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png"},
     ]
   }
+
+  const valor2 = valor.conteudo
 
     const props = {
         description: "TDAH",
@@ -39,7 +41,10 @@ function TDAH() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
-      <Table valor={valor.conteudo}/>
+      { valor2?.length ? valor2.map((data, index) =>
+        <Card category={data.categoria} description={data.descricao} title={data.nome} image={data.image} link={data.link}/>
+      ) : <div></div>
+      }
       <Footer />
     </body>
   );

@@ -4,27 +4,29 @@ import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
 import './style.css';
 import SearchBar from '../../layout/searchbar';
-import Table from '../../layout/Table';
+import Card from '../../layout/Card';
 function PCD() {
 
   const valor = {
     "conteudo" : [
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum PCD", "descricao" : "Lorem Ipsum PCD", "categoria" : "Lorem Ipsum PCD", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://static.significados.com.br/foto/fisica.png"},
     ]
   }
+
+  const valor2 = valor.conteudo
 
     const props = {
         description: "PCD",
@@ -38,7 +40,10 @@ function PCD() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
-      <Table valor={valor.conteudo}/>
+      { valor2?.length ? valor2.map((data, index) =>
+        <Card category={data.categoria} description={data.descricao} link={data.link} title={data.nome} image={data.image}/>
+      ) : <div></div>
+      }
       <Footer />
     </body>
   );
