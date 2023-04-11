@@ -4,29 +4,31 @@ import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
 import './style.css';
 import SearchBar from '../../layout/searchbar';
-import Table from '../../layout/Table';
+import Card from '../../layout/Card';
 function Idosos() {
   const valor = {
     "conteudo" : [
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
+      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
     ]
   }
+
+  const valor2 = valor.conteudo
 
     const props = {
         description: "Idosos",
@@ -40,7 +42,10 @@ function Idosos() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
-      <Table valor={valor.conteudo}/>
+      { valor2?.length ? valor2.map((data, index) =>
+        <Card category={data.categoria} description={data.descricao} title={data.nome} image={data.image} link={data.link}/>
+      ) : <div></div>
+      }
       <Footer />
     </body>
   );
