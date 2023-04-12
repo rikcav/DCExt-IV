@@ -39,7 +39,7 @@ function PCD() {
     <body id="page4">
       <Navbar />
       <Description {...props}/>
-      <SearchBar/>
+       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       { valor2?.length ? valor2.map((data, index) =>
         <Card category={data.categoria} description={data.descricao} link={data.link} title={data.nome} image={data.image}/>
       ) : <div></div>
