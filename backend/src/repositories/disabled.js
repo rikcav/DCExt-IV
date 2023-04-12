@@ -9,12 +9,14 @@ export const createDisabled = async (data) => {
 
 export const getById = async (id) => {
   const disabled = await prisma.disabled.findUnique({
-    where: id,
+    where: {
+      id,
+    }
   });
   return disabled;
 };
 
 export const getAll = async () => {
-  const allDisabled = await prisma.disabled.findMany();
+  const allDisabled = await prisma.disabled.findMany({});
   return allDisabled;
 };

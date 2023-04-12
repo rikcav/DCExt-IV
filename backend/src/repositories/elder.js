@@ -9,13 +9,15 @@ export const createElder = async (data) => {
 
 export const getById = async (id) => {
   const elder = await prisma.elder.findUnique({
-    where: id,
+    where: {
+      id,
+    }
   });
   return elder;
 };
 
 export const getAll = async () => {
-  const allElder = await prisma.elder.findMany();
+  const allElder = await prisma.elder.findMany({});
   return allElder;
 };
 

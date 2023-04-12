@@ -9,7 +9,9 @@ export const createAdhd = async (data) => {
 
 export const getById = async (id) => {
   const adhd = await prisma.aDHD.findUnique({
-    where: id,
+    where: {
+      id,
+    }
   });
   return adhd;
 };

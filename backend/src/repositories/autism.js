@@ -9,12 +9,14 @@ export const createAutism = async (data) => {
 
 export const getById = async (id) => {
   const autism = await prisma.autism.findUnique({
-    where: id,
+    where: {
+      id,
+    }
   });
   return autism;
 };
 
 export const getAll = async () => {
-  const allAutism = await prisma.autism.findMany();
+  const allAutism = await prisma.autism.findMany({});
   return allAutism;
 };
