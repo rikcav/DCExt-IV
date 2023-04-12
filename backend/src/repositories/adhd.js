@@ -15,6 +15,6 @@ export const getById = async (id) => {
 };
 
 export const getAll = async () => {
-  const allAdhd = await prisma.aDHD.findMany();
+  const allAdhd = await prisma.aDHD.findMany({});
   return allAdhd;
 };
