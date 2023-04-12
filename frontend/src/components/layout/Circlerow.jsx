@@ -19,13 +19,13 @@ function CircleRow() {
       </a>
       <a href="/tdah" className='circle-container'>
         <div className="circle red">
-          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1089582424016572567/image_1.png' alt="TDAH"/>
+          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1095551652418826260/Infito.png' alt="TDAH"/>
         </div>
         <p className="description">TDAH</p>
       </a>
       <a href="/autismo" className='circle-container'>
         <div className="circle blue last">
-          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1088974668494540830/image-removebg-preview_4.png' alt="Autismo"/>
+          <img src='https://cdn.discordapp.com/attachments/440326168491720705/1095551652418826260/Infito.png' alt="Autismo"/>
         </div>
         <p className="description">Autismo</p>
       </a>
