@@ -48,8 +48,12 @@
     width: calc(100% - 315px);
     padding-bottom: 100px;
     font-family: 'Raleway', sans-serif;
+  }
+
+  .desc2 {
     
   }
+
   
   hr {
     border: 1px solid #274E87;
