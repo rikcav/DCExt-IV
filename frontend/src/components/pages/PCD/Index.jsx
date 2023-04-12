@@ -40,10 +40,12 @@ function PCD() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
+      <div className='conter'>
       { valor2?.length ? valor2.map((data, index) =>
         <Card category={data.categoria} description={data.descricao} link={data.link} title={data.nome} image={data.image}/>
       ) : <div></div>
       }
+      </div>
       <Footer />
     </body>
   );

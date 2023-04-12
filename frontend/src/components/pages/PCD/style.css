@@ -56,3 +56,9 @@
     border: 1px solid #274E87;
     width: 99.9%;
   }
+
+  .conter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
