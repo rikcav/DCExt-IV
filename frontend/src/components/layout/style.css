@@ -136,6 +136,7 @@ text-decoration: none;
 
 .search-bar input{
   text-align:center;
+  font-size: 20px;
   font-family: 'Raleway', sans-serif;   
   outline-width: 0;
   border: none;
@@ -148,6 +149,11 @@ text-decoration: none;
   margin: 5%;
   font-weight: bold;
 }
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
 
 .card {
   background-color: #EFEBEB;

@@ -8,7 +8,13 @@ import Card from "../../layout/Card";
 import Axios from "axios";
 function PCD() {
   const [cards, setCards] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
+
+  const filteredCards = cards.filter(card => card.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    card.category.toLowerCase().includes(searchTerm.toLowerCase())
+  ) 
+  
   useEffect(() => {
     console.log("Fetching cards...");
     Axios.get(`http://localhost:3001/disabled/get`)
@@ -34,10 +40,10 @@ function PCD() {
     <body id="page4">
       <Navbar />
       <Description {...props} />
-      <SearchBar />
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       <div className="conter">
-        {Array.isArray(cards) &&
-          cards.map((cards) => (
+        {Array.isArray(filteredCards) &&
+          filteredCards.map((cards) => (
             <Card
               category={cards.category}
               description={cards.description}
