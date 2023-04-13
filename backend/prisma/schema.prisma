@@ -32,6 +32,8 @@ model Disabled {
   name        String
   description String
   category    String
+  link        String?
+  image       String?
 }
 
 model ADHD {

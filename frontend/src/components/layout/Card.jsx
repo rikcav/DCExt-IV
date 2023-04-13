@@ -1,19 +1,18 @@
 import React from 'react';
 import './style.css';
 
-function Card({title, description, category, link, image}) {
+function Card({id, name, description, category, image, link,}) {
     return(
         <div className='card'>
             <div className="content">
                 <div className='body-card'>
                     <div className='title'>
-                        <span>{title}</span>
+                        <span>{name}</span>
                     </div>
                     <div className='description'>
                         <p>{description}</p>
                     </div>
                     <div className='category'>
-                        <span className='span-category'>Categoria:&nbsp;</span>
                         <span>{category}</span>
                     </div>
                     <div className='link'>
