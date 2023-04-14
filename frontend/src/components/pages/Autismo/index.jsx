@@ -30,8 +30,8 @@ function Autismo() {
     const props = {
         description: "Autismo",
         imageUrl: "https://cdn.discordapp.com/attachments/440326168491720705/1088974668494540830/image-removebg-preview_4.png",
-        imageAltText: "Simbolo altismo",
-        description2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum maximus risus id efficitur. Quisque vel malesuada nibh. Aliquam sed tellus sem. Duis tellus nisi, vehicula eget fermentum in, dignissim id massa. Etiam tincidunt nunc leo, et lobortis sem cursus non. Duis ac aliquet elit, at posuere mauris. Donec ut euismod urna. Proin pretium ultricies porttitor. Aenean libero tortor, consequat sed congue sit amet, interdum vel dolor. Suspendisse potenti.",
+        imageAltText: "Simbolo autismo",
+        description2: "O TEA-Transtorno do Espectro Autista, é caracterizado por alterações nas funções de desenvolvimento no sistema nervoso, apresentando déficits de interação social e de  comunicação. Dessa forma, desenvolvemos um catálogo de jogos físicos e digitais que podem estimular o desenvolvimento de habilidades e auxiliar na rotina de pessoas autistas.",
         circleColor: "blue"
        
       };
