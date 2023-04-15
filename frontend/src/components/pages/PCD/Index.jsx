@@ -41,17 +41,38 @@ function PCD() {
       <Navbar />
       <Description {...props} />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <div className="conter">
-        {Array.isArray(filteredCards) &&
-          filteredCards.map((cards) => (
-            <Card
-              category={cards.category}
-              description={cards.description}
-              link={cards.link}
-              name={cards.name}
-              image={cards.image}
-            />
-          ))}
+      <div className="card-filter">
+        <div className="conter">
+          {Array.isArray(filteredCards) &&
+            filteredCards.map((cards) => (
+              <Card
+                category={cards.category}
+                description={cards.description}
+                link={cards.link}
+                name={cards.name}
+                image={cards.image}
+              />
+            ))}
+        </div>
+        <div className="filter">
+          <span>Categoria:</span>
+          <div className="filter-option">
+            <input type="radio" value=""/>
+            <p>Todos</p>
+          </div>
+          <div className="filter-option">
+            <input type="radio" value=""/>
+            <p>Todos</p>
+          </div>
+          <div className="filter-option">
+            <input type="radio" value=""/>
+            <p>Todos</p>
+          </div>
+          <div className="filter-option">
+            <input type="radio" value=""/>
+            <p>Todos</p>
+          </div>
+        </div>
       </div>
       <Footer />
     </body>
