@@ -72,6 +72,7 @@ function PCD() {
             <input type="radio" value=""/>
             <p>Todos</p>
           </div>
+          <button>Filtrar</button>
         </div>
       </div>
       <Footer />
