@@ -13,7 +13,9 @@ function PCD() {
 
   const filteredCards = cards.filter(card => card.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     card.category.toLowerCase().includes(searchTerm.toLowerCase())
-  ) 
+  )
+
+  const [category, setCategory] = useState("all");
   
   useEffect(() => {
     console.log("Fetching cards...");
@@ -56,22 +58,12 @@ function PCD() {
         </div>
         <div className="filter">
           <span>Categoria:</span>
-          <div className="filter-option">
-            <input type="radio" value=""/>
-            <p>Todos</p>
-          </div>
-          <div className="filter-option">
-            <input type="radio" value=""/>
-            <p>Todos</p>
-          </div>
-          <div className="filter-option">
-            <input type="radio" value=""/>
-            <p>Todos</p>
-          </div>
-          <div className="filter-option">
-            <input type="radio" value=""/>
-            <p>Todos</p>
-          </div>
+          <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
+            <option value="all">Todos</option>
+            <option value="categoria1">Categoria 1</option>
+            <option value="categoria2">Categoria 2</option>
+            <option value="categoria3">Categoria 3</option>
+          </select>
           <button>Filtrar</button>
         </div>
       </div>
