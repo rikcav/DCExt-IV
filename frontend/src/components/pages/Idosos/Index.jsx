@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import Navbar from '../../layout/navbar';
 import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
@@ -28,6 +28,8 @@ function Idosos() {
     ]
   }
 
+  const [category, setCategory] = useState("all");
+
   const valor2 = valor.conteudo
 
     const props = {
@@ -42,10 +44,24 @@ function Idosos() {
       <Navbar />
       <Description {...props}/>
       <SearchBar/>
+      <div className="card-filter">
+        <div>
       { valor2?.length ? valor2.map((data, index) =>
         <Card category={data.categoria} description={data.descricao} title={data.nome} image={data.image} link={data.link}/>
       ) : <div></div>
       }
+        </div>
+      <div className="filter">
+          <span>Categoria:</span>
+          <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
+            <option value="all">Todos</option>
+            <option value="categoria1">Categoria 1</option>
+            <option value="categoria2">Categoria 2</option>
+            <option value="categoria3">Categoria 3</option>
+          </select>
+          <button>Filtrar</button>
+      </div>
+      </div>
       <Footer />
     </body>
   );

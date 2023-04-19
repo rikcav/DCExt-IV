@@ -13,7 +13,9 @@ function PCD() {
 
   const filteredCards = cards.filter(card => card.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
     card.category.toLowerCase().includes(searchTerm.toLowerCase())
-  ) 
+  )
+
+  const [category, setCategory] = useState("all");
   
   useEffect(() => {
     console.log("Fetching cards...");
@@ -41,17 +43,29 @@ function PCD() {
       <Navbar />
       <Description {...props} />
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-      <div className="conter">
-        {Array.isArray(filteredCards) &&
-          filteredCards.map((cards) => (
-            <Card
-              category={cards.category}
-              description={cards.description}
-              link={cards.link}
-              name={cards.name}
-              image={cards.image}
-            />
-          ))}
+      <div className="card-filter">
+        <div className="conter">
+          {Array.isArray(filteredCards) &&
+            filteredCards.map((cards) => (
+              <Card
+                category={cards.category}
+                description={cards.description}
+                link={cards.link}
+                name={cards.name}
+                image={cards.image}
+              />
+            ))}
+        </div>
+        <div className="filter">
+          <span>Categoria:</span>
+          <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
+            <option value="all">Todos</option>
+            <option value="categoria1">Categoria 1</option>
+            <option value="categoria2">Categoria 2</option>
+            <option value="categoria3">Categoria 3</option>
+          </select>
+          <button>Filtrar</button>
+        </div>
       </div>
       <Footer />
     </body>

@@ -63,3 +63,30 @@
     align-items: center;
     margin-bottom: 150px;
   }
+
+  .filter-option {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .filter {
+    background-color: #EFEBEB;
+    width: 10rem;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-top: 25px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 120px;
+  }
+
+  .filter span {
+    font-weight: bold;
+  }
