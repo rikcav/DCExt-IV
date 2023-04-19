@@ -20,3 +20,12 @@ export const getAll = async () => {
   const allAdhd = await prisma.aDHD.findMany({});
   return allAdhd;
 };
+
+export const getByCategory = async(categoryValue) =>{
+  const category = await prisma.aDHD.findMany({
+    where:{
+      category: categoryValue
+    }
+  })
+  return category;
+}

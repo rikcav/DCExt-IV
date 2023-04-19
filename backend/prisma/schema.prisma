@@ -16,6 +16,7 @@ model Autism {
   name        String
   description String
   category    String
+  link        String?
 }
 
 model Elder {
@@ -24,6 +25,7 @@ model Elder {
   name        String
   description String
   category    String
+  link        String?
 }
 
 model Disabled {
@@ -42,6 +44,8 @@ model ADHD {
   name        String
   description String
   category    String
+  link        String?
+  image       String?
 }
 
 //adicionar o atributo de links 

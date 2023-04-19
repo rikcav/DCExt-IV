@@ -1,4 +1,4 @@
-import { create, get, getId } from "../controllers/adhd";
+import { create, get, getId, getCategory } from "../controllers/adhd";
 const adhd = (app) => {
   //create
   app.post("/adhd/create", create);
@@ -6,6 +6,8 @@ const adhd = (app) => {
   app.get("/adhd/get", get)
   //getById
   app.get("/adhd/get/:id", getId)
+  //betByCategory
+  app.get("adhd/get/:category", getCategory)
 };
 
 export default adhd;
