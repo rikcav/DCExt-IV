@@ -42,6 +42,9 @@ model ADHD {
   name        String
   description String
   category    String
+  link        String?
+  image       String?
+  alt         String?
 }
 
 //adicionar o atributo de links 
