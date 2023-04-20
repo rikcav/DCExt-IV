@@ -33,7 +33,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 .footer{
-  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: #D9D9D9;
@@ -62,6 +61,7 @@ html, body {
   justify-content:space-evenly;
   padding-top: 60px;
   padding-bottom: 70px;
+  
 }
 
 .circle {
