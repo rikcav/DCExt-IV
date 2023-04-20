@@ -7,7 +7,7 @@ const elder = (app) => {
   //getById
   app.get("/elder/get/:id", getId)
   //betByCategory
-  app.get("elder/get/category/:category", getCategory)
+  app.get("/elder/get/category/:category", getCategory)
 };
 
 export default elder;
