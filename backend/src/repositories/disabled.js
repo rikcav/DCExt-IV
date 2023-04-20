@@ -23,8 +23,10 @@ export const getAll = async () => {
 
 export const getByCategory = async(category) =>{
   const categoria = await prisma.disabled.findMany({
-    where:{
-      category,
+   where:{
+      category:{
+        contains: category
+      }
     }
   })
   return categoria;
