@@ -1,5 +1,5 @@
 import req from "express/lib/request";
-import { createAutism, getAll, getById } from "../repositories/autism";
+import { createAutism, getAll, getById, getByCategory } from "../repositories/autism";
 import { autismValidation } from "../validations/autism";
 
 export const create = async (req, res) => {
@@ -31,3 +31,12 @@ export const getId = async (req, res) => {
     res.status(400).send(e);
   }
 };
+
+export const getCategory = async(req,res) =>{
+  try {
+      const category = await getByCategory(req.params.category)
+      res.status(200).send(category)
+  } catch (e) {
+      res.status(400).send(e)
+  }
+}

@@ -21,3 +21,11 @@ export const getAll = async () => {
   return allElder;
 };
 
+export const getByCategory = async(categoryValue) =>{
+  const category = await prisma.elder.findMany({
+    where:{
+      category: categoryValue
+    }
+  })
+  return category;
+}

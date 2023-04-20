@@ -20,3 +20,12 @@ export const getAll = async () => {
   const allDisabled = await prisma.disabled.findMany({});
   return allDisabled;
 };
+
+export const getByCategory = async(categoryValue) =>{
+  const category = await prisma.disabled.findMany({
+    where:{
+      category: categoryValue
+    }
+  })
+  return category;
+}
