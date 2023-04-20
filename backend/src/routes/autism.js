@@ -7,7 +7,7 @@ const autism = (app) => {
   //getById
   app.get("/autism/get/:id", getId)
   //betByCategory
-  app.get("autism/get/:category", getCategory)
+  app.get("autism/get/category/:category", getCategory)
 };
 
 export default autism;

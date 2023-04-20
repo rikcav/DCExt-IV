@@ -7,7 +7,7 @@ const adhd = (app) => {
   //getById
   app.get("/adhd/get/:id", getId)
   //betByCategory
-  app.get("adhd/get/:category", getCategory)
+  app.get("adhd/get/category/:category", getCategory)
 };
 
 export default adhd;
