@@ -21,10 +21,10 @@ export const getAll = async () => {
   return allAutism;
 };
 
-export const getByCategory = async(categoryValue) =>{
+export const getByCategory = async(category) =>{
   const category = await prisma.autism.findMany({
     where:{
-      category: categoryValue
+      category
     }
   })
   return category;
