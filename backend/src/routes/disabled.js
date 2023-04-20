@@ -7,7 +7,7 @@ const disabled = (app) => {
   //getById
   app.get("/disabled/get/:id", getId)
   //betByCategory
-  app.get("disabled/get/:category", getCategory)
+  app.get("/disabled/get/teste/:category",getCategory)
 };
 
 export default disabled;

@@ -39,5 +39,6 @@ export const getCategory = async(req,res) =>{
         res.status(200).send(category)
     } catch (e) {
         res.status(400).send(e)
+        console.log(e)
     }
 }
