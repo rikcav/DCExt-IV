@@ -22,10 +22,10 @@ export const getAll = async () => {
 };
 
 export const getByCategory = async(category) =>{
-  const category = await prisma.elder.findMany({
+  const categoria = await prisma.elder.findMany({
     where:{
       category,
     }
   })
-  return category;
+  return categoria;
 }
