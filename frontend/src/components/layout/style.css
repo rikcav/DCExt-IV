@@ -4,6 +4,7 @@ body {
 .navbar{
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-family: 'Roboto', sans-serif;
   height: 10%;
   width: 100%;
@@ -13,13 +14,23 @@ body {
   height: 50px;
   background-color: #274E87;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  
+  justify-content: between;
+}
+
+.navbar .menu {
+  margin-right: 30px;
+  color: #fff;
+}
+
+.navbar .menu:hover {
+  transition: 0.5s;
+  color: #d9d9d9;
 }
 
 .navbar img {
   margin: 0;
   margin-top: 5px;
-  padding-left: 31px;
+  padding-left: 30px;
   margin-left: 10px;
 }
 

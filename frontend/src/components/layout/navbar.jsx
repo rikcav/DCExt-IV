@@ -9,6 +9,9 @@ function Navbar() {
         <Link to="/">
           <img src="../../../src/assets/DCExt-IV.png" alt="Logo da navbar, está escrito DCExt-v" width="100"/>
         </Link>
+        <Link className='menu' to="/publicar">
+          Publicar
+        </Link>
       </div>
     </div>
   );
