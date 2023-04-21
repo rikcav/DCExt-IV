@@ -21,11 +21,13 @@ export const getAll = async () => {
   return allAdhd;
 };
 
-export const getByCategory = async(categoryValue) =>{
-  const category = await prisma.aDHD.findMany({
+export const getByCategory = async(category) =>{
+  const categoria = await prisma.aDHD.findMany({
     where:{
-      category: categoryValue
+      category:{
+        contains: category
+      }
     }
   })
-  return category;
+  return categoria;
 }
