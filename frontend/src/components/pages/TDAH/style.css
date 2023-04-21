@@ -91,3 +91,14 @@
   .filter span {
     font-weight: bold;
   }
+
+  select {
+    margin-top: 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    height: 1.8rem;
+    margin-bottom: 15px;
+    font-family: 'Raleway', sans-serif;
+  }

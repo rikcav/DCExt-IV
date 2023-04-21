@@ -231,3 +231,21 @@ text-decoration: none;
   border-radius: 20px;
   margin-right: 40px;
 }
+
+button {
+  background-color: #274E87;
+  border-radius: 20px;
+  width: 6rem;
+  height: 1.6rem;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+  color: white;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif; 
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #DD3B3B;
+}

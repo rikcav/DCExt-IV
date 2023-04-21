@@ -2,35 +2,62 @@ import React, { useEffect, useState } from "react";
 import Navbar from '../../layout/navbar';
 import Footer from '../../layout/Footer';
 import Description from '../../layout/Description';
+import Button from '../../layout/Button';
 import './style.css';
 import SearchBar from '../../layout/searchbar';
 import Card from '../../layout/Card';
-function Idosos() {
-  const valor = {
-    "conteudo" : [
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Jogos de mesa", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-      {"tipo" : "Aplicativo", "nome" : "Lorem Ipsum Idoso", "descricao" : "Lorem Ipsum Idoso", "categoria" : "Lorem Ipsum Idoso", "link": "https://www.figma.com/file/pzavXrX9UcVsfmgC7VEGCz/Prot%C3%B3tipo-DCExt-IV?node-id=119-2&t=dx9CAnon95oZZOvG-0", "image": "https://cdn.discordapp.com/attachments/440326168491720705/1088971906880901141/image.png"},
-    ]
-  }
+import Axios from "axios";
 
+function Idosos() {
+  
+  const [cards, setCards] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
   const [category, setCategory] = useState("all");
 
-  const valor2 = valor.conteudo
+  const getByCategory = async() => {
+    try {
+        const card = await Axios.get(`http://localhost:3001/elder/get/category/${encodeURI(category)}`, {
+        });
+        setCards(card.data);
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  const getCards = async() => {
+    Axios.get(`http://localhost:3001/elder/get`)
+      .then((response) => {
+        setCards(response.data);
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }
+
+const handleFilter = () => {
+    if (category == "all") {
+        getCards();
+    } else {
+        getByCategory();
+    }
+}
+
+  const filteredCards = cards.filter(card => card.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+  card.category.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+
+  useEffect(() => {
+    console.log("Fetching cards...");
+    Axios.get(`http://localhost:3001/elder/get`)
+      .then((response) => {
+        setCards(response.data);
+        console.log(response.data)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
     const props = {
         description: "Idosos",
@@ -39,27 +66,39 @@ function Idosos() {
         description2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum maximus risus id efficitur. Quisque vel malesuada nibh. Aliquam sed tellus sem. Duis tellus nisi, vehicula eget fermentum in, dignissim id massa. Etiam tincidunt nunc leo, et lobortis sem cursus non. Duis ac aliquet elit, at posuere mauris. Donec ut euismod urna. Proin pretium ultricies porttitor. Aenean libero tortor, consequat sed congue sit amet, interdum vel dolor. Suspendisse potenti.",
         circleColor: "blue"
       };
+
+
   return (
     <body id="page3">
       <Navbar />
       <Description {...props}/>
-      <SearchBar/>
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       <div className="card-filter">
         <div>
-      { valor2?.length ? valor2.map((data, index) =>
-        <Card category={data.categoria} description={data.descricao} title={data.nome} image={data.image} link={data.link}/>
-      ) : <div></div>
-      }
+      {Array.isArray(filteredCards) &&
+            filteredCards.map((cards) => (
+              <Card
+                category={cards.category}
+                description={cards.description}
+                link={cards.link}
+                name={cards.name}
+                image={cards.image}
+              />
+            ))}
         </div>
       <div className="filter">
           <span>Categoria:</span>
-          <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
+          <select value={category} onChange={ev => setCategory(ev.target.value)}>
             <option value="all">Todos</option>
-            <option value="categoria1">Categoria 1</option>
-            <option value="categoria2">Categoria 2</option>
-            <option value="categoria3">Categoria 3</option>
+            <option value="comunicação">Comunicação</option>
+            <option value="foco">Foco</option>
+            <option value="habilidade cognitiva">Habilidade Cognitiva</option>
+            <option value="pensamento lógico">Pensamento Lógico</option>
+            <option value="aprendizagem">Aprendizagem</option>
+            <option value="imaginação">Imaginação</option>
+            <option value="coordenação motora">Coordenação Motora</option>
           </select>
-          <button>Filtrar</button>
+          <Button name={"Filtrar"} onClick={handleFilter}></Button>
       </div>
       </div>
       <Footer />
