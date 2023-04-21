@@ -98,7 +98,7 @@ const handleFilter = () => {
         </div>
       <div className="filter">
           <span>Categoria:</span>
-          <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
+          <select value={category} onChange={ev => setCategory(ev.target.value)}>
             <option value="all">Todos</option>
             <option value="comunicação">Comunicação</option>
             <option value="foco">Foco</option>
