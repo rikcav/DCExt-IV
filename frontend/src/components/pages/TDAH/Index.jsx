@@ -55,7 +55,7 @@ function TDAH() {
     description: "TDAH",
     imageUrl: "https://cdn.discordapp.com/attachments/440326168491720705/1095551652418826260/Infito.png",
     imageAltText: "TDAH",
-    description2: "O TDAH é um transtorno neurobiológico de causas genéticas, caracterizado por sintomas como falta de atenção, inquietação e impulsividade. Visando ajudar essas pessoas desenvolvemos uma ferramenta versatil onde apresenta jogos que auxiliam algumas habilidades importantes para o dia a dia. Esses jogos consistem em jogos virtuais e fisicos, que permite o usuario utilizar  da maneira que se sinta confortavel. Essa ferramenta, funciona como um complementar a outras formas de tratamento, como terapia comportamental e medicação, trabalhando no aumento da concentração, no desenvolvimento das habilidades cognitivas, redução do estresse, melhoria na autoestima, estímulo à interação social.",
+    description2: "O TDAH é um transtorno neurobiológico de causas genéticas, caracterizado por sintomas como falta de atenção, inquietação e impulsividade. Visando ajudar essas pessoas, desenvolvemos uma ferramenta versatil no qual apresenta jogos que auxiliam algumas habilidades importantes para o dia a dia. Essas aplicações consistem em jogos virtuais e fisicos, que permitem o usuario utiliza-los da maneira que se sinta confortaveis. Essa ferramenta funciona como um complementar de outras formas de tratamento, como terapia comportamental e medicação, trabalhando no aumento da concentração, no desenvolvimento das habilidades cognitivas, na redução do estresse, na melhoria da autoestima e no estímulo à interação social.",
     circleColor: "red"
   };
   

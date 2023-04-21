@@ -56,7 +56,7 @@ function PCD() {
       "https://cdn.discordapp.com/attachments/440326168491720705/1088971888388231270/image.png",
     imageAltText: "PCD",
     description2:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum maximus risus id efficitur. Quisque vel malesuada nibh. Aliquam sed tellus sem. Duis tellus nisi, vehicula eget fermentum in, dignissim id massa. Etiam tincidunt nunc leo, et lobortis sem cursus non. Duis ac aliquet elit, at posuere mauris. Donec ut euismod urna. Proin pretium ultricies porttitor. Aenean libero tortor, consequat sed congue sit amet, interdum vel dolor. Suspendisse potenti.",
+      "Este é um projeto voltado ao público com  eficiência física, que visa promover a inclusão e a acessibilidade social. Nossa ideia central é mapear e avaliar locais que se propõem a oferecer acessibilidade para pessoas com deficiência física e de locomoção. Dessa forma, os indivíduos com deficiência poderão avaliar previamente a qualidade de um local e evitar situações de desconforto ou necessidade imediata.",
     circleColor: "red",
   };
   return (
