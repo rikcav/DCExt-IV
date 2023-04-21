@@ -37,6 +37,9 @@ body {
   width: 100%;
   background-color: #D9D9D9;
   height: 100px;
+
+  position: fixed;
+  bottom: 0;
 }
 html, body {
   height: 100%;
