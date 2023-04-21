@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/Footer";
+import Button from '../../layout/Button';
 import Description from "../../layout/Description";
 import "./style.css";
 import SearchBar from "../../layout/searchbar";
@@ -9,16 +10,19 @@ import Axios from "axios";
 function PCD() {
   const [cards, setCards] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
-
-
-  const filteredCards = cards.filter(card => card.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    card.category.toLowerCase().includes(searchTerm.toLowerCase())
-  )
-
   const [category, setCategory] = useState("all");
-  
-  useEffect(() => {
-    console.log("Fetching cards...");
+
+  const getByCategory = async() => {
+    try {
+        const card = await Axios.get(`http://localhost:3001/disabled/get/category/${encodeURI(category)}`, {
+        });
+        setCards(card.data);
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+  const getCards = async() => {
     Axios.get(`http://localhost:3001/disabled/get`)
       .then((response) => {
         setCards(response.data);
@@ -27,6 +31,23 @@ function PCD() {
       .catch((error) => {
         console.log(error);
       });
+  }
+
+  const handleFilter = () => {
+    if (category == "all") {
+        getCards();
+    } else {
+        getByCategory();
+    }
+}
+
+
+  const filteredCards = cards.filter(card => card.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    card.category.toLowerCase().includes(searchTerm.toLowerCase())
+  )
+  
+  useEffect(() => {
+    getCards();
   }, []);
 
   const props = {
@@ -60,11 +81,15 @@ function PCD() {
           <span>Categoria:</span>
           <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
             <option value="all">Todos</option>
-            <option value="categoria1">Categoria 1</option>
-            <option value="categoria2">Categoria 2</option>
-            <option value="categoria3">Categoria 3</option>
+            <option value="comunicação">Comunicação</option>
+            <option value="foco">Foco</option>
+            <option value="habilidade cognitiva">Habilidade Cognitiva</option>
+            <option value="pensamento lógico">Pensamento Lógico</option>
+            <option value="aprendizagem">Aprendizagem</option>
+            <option value="imaginação">Imaginação</option>
+            <option value="coordenação motora">Coordenação Motora</option>
           </select>
-          <button>Filtrar</button>
+          <Button name={"Filtrar"} onClick={handleFilter}></Button>
         </div>
       </div>
       <Footer />
