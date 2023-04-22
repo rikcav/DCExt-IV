@@ -4,6 +4,10 @@ import makeAnimated from "react-select/animated";
 import Navbar from "../../layout/navbar";
 import Footer from "../../layout/Footer";
 import "./style.css";
+import axios from 'axios';
+import queryString from 'query-string';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const animatedComponents = makeAnimated();
 
@@ -22,7 +26,7 @@ function Publicar() {
     name: "",
     type: "",
     description: "",
-    category: [],
+    category:[],
     link: "",
     selected: "",
   });
@@ -79,11 +83,73 @@ function Publicar() {
       name: "",
       type: "",
       description: "",
-      category: [],
+      category:[],
       link: "",
       selected: "",
     });
+    const categoryString = formData.category.join(",");
+    const data = {
+      name: formData.name,
+      type: formData.type,
+      description: formData.description,
+      category: categoryString,
+      link: formData.link,
+    };
+
+    //  AXIOS AREA
+    if (formData.selected === "autismo") {
+      axios
+      .post("http://localhost:3001/autism/create", data)
+      .then(response => {
+        if (response.status === 200) {
+          console.log("publicado");
+          toast.success("publicado")
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+      
+    } else if (formData.selected === "idosos") {
+      axios
+      .post("http://localhost:3001/elder/create", data)
+      .then(response => {
+        if (response.status === 200) {
+          console.log("publicado");
+          toast.success("publicado")
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }else if(formData.selected === "TDAH"){
+      axios
+      .post("http://localhost:3001/adhd/create", data)
+      .then(response => {
+        if (response.status === 200) {
+          console.log("publicado");
+          toast.success("publicado")
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }else if (formData.selected === "PCD"){
+      axios
+      .post("http://localhost:3001/disabled/create", data)
+      .then(response => {
+        if (response.status === 200) {
+          console.log("publicado");
+          toast.success("publicado")
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    }
   };
+
+
 
   return (
     <div>
@@ -175,6 +241,7 @@ function Publicar() {
             <button type="submit">Publicar</button>
           </div>
         </form>
+            <ToastContainer/>
       </div>
       <Footer />
     </div>
