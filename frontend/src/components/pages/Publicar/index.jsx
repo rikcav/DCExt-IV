@@ -27,7 +27,6 @@ function Publicar() {
     selected: "",
   });
 
-  
   const handleChange = (selectedOption) => {
     const selectedValues = selectedOption
       ? selectedOption.map((option) => option.value)
@@ -35,6 +34,41 @@ function Publicar() {
     setFormData((prevFormData) => ({
       ...prevFormData,
       category: selectedValues,
+    }));
+  };
+
+  const handleNameChange = (e) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      name: e.target.value,
+    }));
+  };
+  
+  const handleTypeChange = (e) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      type: e.target.value,
+    }));
+  };
+  
+  const handleDescriptionChange = (e) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      description: e.target.value,
+    }));
+  };
+  
+  const handleLinkChange = (e) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      link: e.target.value,
+    }));
+  };
+
+  const handleSelectChange = (e) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      selected: e.target.value,
     }));
   };
 
@@ -63,7 +97,7 @@ function Publicar() {
               id="name"
               name="name"
               value={formData.name}
-              onChange={handleChange}
+              onChange={handleNameChange}
               required
             />
           </div>
@@ -74,7 +108,7 @@ function Publicar() {
               id="type"
               name="type"
               value={formData.type}
-              onChange={handleChange}
+              onChange={handleTypeChange}
               required
             />
           </div>
@@ -84,14 +118,13 @@ function Publicar() {
               id="description"
               name="description"
               value={formData.description}
-              onChange={handleChange}
+              onChange={handleDescriptionChange}
               required
             />
           </div>
-          <div   className="category-container">
+          <div className="category-container">
             <label htmlFor="category">Categoria:</label>
             <Select
-
               closeMenuOnSelect={false}
               components={animatedComponents}
               isMulti
@@ -118,7 +151,7 @@ function Publicar() {
               id="link"
               name="link"
               value={formData.link}
-              onChange={handleChange}
+              onChange={handleLinkChange}
               required
             />
           </div>
@@ -128,7 +161,7 @@ function Publicar() {
               id="selected"
               name="selected"
               value={formData.selected}
-              onChange={handleChange}
+              onChange={handleSelectChange}
               required
             >
               <option value="">Selecione uma opção</option>
