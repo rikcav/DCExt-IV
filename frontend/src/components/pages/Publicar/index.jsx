@@ -167,13 +167,19 @@ function Publicar() {
           </div>
           <div>
             <label htmlFor="type">Tipo:</label>
-            <input
-              type="text"
-              id="type"
-              name="type"
+            <select
+              id="selected"
+              name="selected"
               value={formData.type}
               onChange={handleTypeChange}
-            />
+              required
+            >
+              <option value="">Selecione uma opção</option>
+              <option value="Jogos Digitais">Jogos Digitais</option>
+              <option value="Jogos Físicos">Jogos Físicos</option>
+              <option value="Cartilhas">Cartilhas</option>
+              <option value="Documentos">Documentos</option>
+            </select>
           </div>
           <div>
             <label htmlFor="description">Descrição:</label>
@@ -218,7 +224,7 @@ function Publicar() {
             />
           </div>
           <div>
-            <label htmlFor="selected">Selecionar:</label>
+            <label htmlFor="selected">Publicar em:</label>
             <select
               id="selected"
               name="selected"
