@@ -51,7 +51,7 @@
   <h2>Como usar</h2>
   <p>Para roda a plataforma localmente na sua máquina, você precisará clonar o repositório e instalar as dependências:</p>
   <pre><code>git clone https://github.com/seu-usuario/powerup.git
-cd powerup
+cd DCEXT-IV
 npm install
   </code></pre>
   
