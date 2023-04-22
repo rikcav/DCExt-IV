@@ -7,8 +7,24 @@ function Home() {
     return (
       <>
       <body id="page1">
+        
         <Navbar />
-        <p className='body' >Lorem ipsum dolor sit amet consectetur. Mauris posuere morbi condimentum purus donec pharetra. In tincidunt metus lacinia venenatis risus egestas. Duis tincidunt sit pharetra ac egestas. Nibh lectus sit sit gravida. Netus ultrices maecenas quam morbi est fusce.N porttitor. At vitae leo viverra cras pellentesque. Mi vitae at rhoncus adipiscing laoreet feugiat. Elit lacinia blandit molestie ut posuere. Blandit ultrices pharetra ullamcorper mattis. Placerat tellus arcu ac integer donec feugiat enim. Hendrerit elit nunc tellus felis tincidunt a platea molestie aliquam. Ut gravida enim senectus urna felis. Tempor ultrices condimentum cras eget libero. Pellentesque morbi tincidunt odio donec faucibus. Ultrices hendrerit nisl eu sapien amet bibendum euismod quis tellus.</p>
+        <p className='body' style={{ textAlign: "justify" }} >
+        Bem-vindo(a) à plataforma de materiais didáticos para inclusão e cuidados de pessoas idosas, pessoas com TDAH, PCD e autismo!
+        </p>
+        <p className='body' style={{ textAlign: "justify" }}>
+        Aqui você encontrará uma variedade de jogos e documentos criados para auxiliar pessoas que desejam ajudar aqueles com esses problemas. Nossos materiais foram cuidadosamente projetados para atender às necessidades específicas desses grupos, com o objetivo de promover inclusão e bem-estar.
+        </p>
+        <p className='body' style={{ textAlign: "justify" }}> 
+        Nosso conteúdo é criado por estudantes em diversas áreas, incluindo educação e pscicologia, garantindo que as melhores práticas e abordagens sejam utilizadas em cada material.
+        </p>
+        <p className='body' style={{ textAlign: "justify" }}>
+        Nós acreditamos que todos merecem a oportunidade de aprender e crescer, independentemente de suas diferenças. É por isso que estamos comprometidos em fornecer os melhores recursos possíveis para aqueles que desejam ajudar os outros a alcançar seu potencial máximo.
+        </p>
+        <p className='body' style={{ textAlign: "justify" }}>
+        Navegue por nossa plataforma e descubra os recursos disponíveis para ajudá-lo(a) em sua jornada de inclusão e cuidado.
+        </p>
+        
         <CircleRow />
         <Footer />
       </body>
