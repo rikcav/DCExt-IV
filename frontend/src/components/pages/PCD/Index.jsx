@@ -71,7 +71,7 @@ function PCD() {
               <Card
                 category={cards.category}
                 description={cards.description}
-                link={cards.link}
+                link={""+cards.link}
                 name={cards.name}
                 image={cards.image}
               />
