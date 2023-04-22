@@ -8,8 +8,13 @@
 .form {
     display: flex;
     flex-direction: column;
+    width: 30%;
+    min-width: 200px;
     max-width: 600px;
     margin: 40px auto;
+}
+.form #description {
+  height: 100px;
 }
 .form div {
   display: flex;
@@ -33,7 +38,10 @@
     border-radius: 4px;
 }
   
-.form button[type="submit"] {
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #0077ff;
   color: #fff;
   padding: 8px 16px;
