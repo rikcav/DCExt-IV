@@ -80,14 +80,14 @@ function TDAH() {
       <div className="filter">
           <span>Categoria:</span>
           <select name="" value={category} onChange={ev => setCategory(ev.target.value)}>
-            <option value="all">Todos</option>
-            <option value="comunicação">Comunicação</option>
-            <option value="foco">Foco</option>
-            <option value="habilidade cognitiva">Habilidade Cognitiva</option>
-            <option value="pensamento lógico">Pensamento Lógico</option>
-            <option value="aprendizagem">Aprendizagem</option>
-            <option value="imaginação">Imaginação</option>
-            <option value="coordenação motora">Coordenação Motora</option>
+          <option value="all">Todos</option>
+            <option value="Comunicação">Comunicação</option>
+            <option value="Foco">Foco</option>
+            <option value="Habilidade Cognitivas">Habilidade Cognitiva</option>
+            <option value="Pensamento Lógico">Pensamento Lógico</option>
+            <option value="Aprendizagem">Aprendizagem</option>
+            <option value="Imaginação">Imaginação</option>
+            <option value="Coordenação Motora">Coordenação Motora</option>
           </select>
           <Button name={"Filtrar"} onClick={handleFilter}></Button>
       </div>

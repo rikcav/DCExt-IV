@@ -78,7 +78,7 @@ function Publicar() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Aqui você pode enviar os dados do formulário para a API ou fazer algo com eles
+    console.log(formData);
     setFormData({
       name: "",
       type: "",
@@ -148,8 +148,6 @@ function Publicar() {
       });
     }
   };
-
-
 
   return (
     <div>
