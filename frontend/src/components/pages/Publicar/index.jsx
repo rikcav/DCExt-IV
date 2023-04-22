@@ -173,7 +173,6 @@ function Publicar() {
               name="type"
               value={formData.type}
               onChange={handleTypeChange}
-              required
             />
           </div>
           <div>
@@ -216,7 +215,6 @@ function Publicar() {
               name="link"
               value={formData.link}
               onChange={handleLinkChange}
-              required
             />
           </div>
           <div>
