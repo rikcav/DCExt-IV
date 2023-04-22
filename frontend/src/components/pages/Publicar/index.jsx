@@ -87,7 +87,7 @@ function Publicar() {
       link: "",
       selected: "",
     });
-    const categoryString = formData.category.join(",");
+    const categoryString = formData.category.join(", ");
     const data = {
       name: formData.name,
       type: formData.type,

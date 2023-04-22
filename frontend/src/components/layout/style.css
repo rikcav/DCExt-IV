@@ -209,6 +209,17 @@ text-decoration: none;
   font-family: 'Raleway', sans-serif;
 }
 
+
+.card .type {
+  margin-bottom: 10px;
+}
+
+.card .type span {
+  font-size: 15px;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+}
+
 .card .category .span-category {
   font-size: 15px;
   color: black;

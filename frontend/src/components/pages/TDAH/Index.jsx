@@ -71,6 +71,7 @@ function TDAH() {
               <Card
                 category={cards.category}
                 description={cards.description}
+                type={cards.type}
                 link={cards.link}
                 name={cards.name}
                 image={cards.image}
