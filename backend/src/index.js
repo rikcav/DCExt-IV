@@ -11,5 +11,5 @@ app.use(express.json())
 
 routes(app)
 
-app.listen(3001)
+app.listen(process.env.PORT ? Number(process.env.PORT) : 3001)
 console.log("Servidor Iniciado")
