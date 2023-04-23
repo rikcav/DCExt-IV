@@ -19,6 +19,31 @@ const options = [
   { value: "Aprendizagem", label: "Aprendizagem" },
   { value: "Imaginação", label: "Imaginação" },
   { value: "Coordenação Motora", label: "Coordenação Motora" },
+  { value: "Atenção", label: "Atenção" },
+  { value: "Concentração", label: "Concentração" },
+  { value: "Cores", label: "Cores" },
+  { value: "Criatividade", label: "Criatividade" },
+  { value: "Dedução", label: "Dedução" },
+  { value: "Discriminação Visual", label: "Discriminação Visual" },
+  { value: "Emoções Lúdicas", label: "Emoções Lúdicas" },
+  { value: "Expressões de Sentimento", label: "Expressões de Sentimento" },
+  { value: "Habilidades de Comunicação", label: "Habilidades de Comunicação" },
+  { value: "Habilidadaes de Lógica", label: "Habilidadaes de Lógica" },
+  { value: "Habilidades Motoras", label: "Habilidades Motoras" },
+  { value: "Habilidades Sociais", label: "Habilidades Sociais" },
+  { value: "Habilidades Sociais e Emocionais", label: "Habilidades Sociais e Emocionais" },
+  { value: "Inteligência", label: "Inteligência" },
+  { value: "Interação Social", label: "Interação Social" },
+  { value: "Luzes", label: "Luzes" },
+  { value: "Habilidades Sociais", label: "Habilidades Sociais" },
+  { value: "Músicas", label: "Músicas" },
+  { value: "Habilidades Sociais", label: "Habilidades Sociais" },
+  { value: "Pensamento Estatégicos", label: "Pensamento Estatégicos" },
+  { value: "Sons", label: "Sons" },
+  { value: "Tranquilizar", label: "Tranquilizar" },
+
+
+
 ];
 
 function Publicar() {
@@ -192,7 +217,7 @@ function Publicar() {
             />
           </div>
           <div className="category-container">
-            <label htmlFor="category">Categoria:</label>
+            <label htmlFor="category">Categoria(s):</label>
             <Select
               closeMenuOnSelect={false}
               components={animatedComponents}

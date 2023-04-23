@@ -100,14 +100,34 @@ const handleFilter = () => {
       <div className="filter">
           <span>Categoria:</span>
           <select value={category} onChange={ev => setCategory(ev.target.value)}>
-            <option value="all">Todos</option>
-            <option value="Comunicação">Comunicação</option>
-            <option value="Foco">Foco</option>
-            <option value="Habilidade Cognitivas">Habilidade Cognitiva</option>
-            <option value="Pensamento Lógico">Pensamento Lógico</option>
-            <option value="Aprendizagem">Aprendizagem</option>
-            <option value="Imaginação">Imaginação</option>
-            <option value="Coordenação Motora">Coordenação Motora</option>
+          <option value="all">Todos</option>
+          <option value="Comunicação">Comunicação</option>
+          <option value="Foco">Foco</option>
+          <option value="Habilidades Cognitivas">Habilidades Cognitivas</option>
+          <option value="Pensamento Lógico">Pensamento Lógico</option>
+          <option value="Aprendizagem">Aprendizagem</option>
+          <option value="Imaginação">Imaginação</option>
+          <option value="Coordenação Motora">Coordenação Motora</option>
+          <option value="Atenção">Atenção</option>
+          <option value="Concentração">Concentração</option>
+          <option value="Cores">Cores</option>
+          <option value="Criatividade">Criatividade</option>
+          <option value="Dedução">Dedução</option>
+          <option value="Discriminação Visual">Discriminação Visual</option>
+          <option value="Emoções Lúdicas">Emoções Lúdicas</option>
+          <option value="Expressões de Sentimento">Expressões de Sentimento</option>
+          <option value="Habilidades de Comunicação">Habilidades de Comunicação</option>
+          <option value="Habilidadaes de Lógica">Habilidadaes de Lógica</option>
+          <option value="Habilidades Motoras">Habilidades Motoras</option>
+          <option value="Habilidades Sociais">Habilidades Sociais</option>
+          <option value="Habilidades Sociais e Emocionais">Habilidades Sociais e Emocionais</option>
+          <option value="Inteligência">Inteligência</option>
+          <option value="Interação Social">Interação Social</option>
+          <option value="Luzes">Luzes</option>
+          <option value="Músicas">Músicas</option>
+          <option value="Pensamento Estatégicos">Pensamento Estatégicos</option>
+          <option value="Sons">Sons</option>
+          <option value="Tranquilizar">Tranquilizar</option>
           </select>
           <Button name={"Filtrar"} onClick={handleFilter}></Button>
       </div>
