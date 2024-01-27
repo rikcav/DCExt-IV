@@ -52,12 +52,10 @@
   <p>Para roda a plataforma localmente na sua máquina, você precisará clonar o repositório e instalar as dependências:</p>
   <pre><code>git clone https://github.com/seu-usuario/powerup.git
 cd DCEXT-IV
-npm install
-  </code></pre>
+npm install</code></pre>
   
   <p>Em seguida, você precisará configurar as variáveis de ambiente:</p>
-  <pre><code>cp .env.example .env
-  </code></pre>
+  <pre><code>cp .env.example .env</code></pre>
   
   <p>Edite o arquivo <code>.env</code> para fornecer as informações necessárias, como as credenciais do banco de dados.</p>
   <p>Para rodar a aplicação, você precisará ter o Docker e o Docker Compose instalados em sua máquina.</p>
@@ -68,11 +66,9 @@ npm install
 </ol>
   
   <p>Por fim, execute o comando para iniciar o servidor no back-end:</p>
-  <pre><code>npm run dev
-  </code></pre>
+  <pre><code>npm run dev</code></pre>
   <p>Execute para rodar o front-end:</p>
-  <pre><code>npm run dev
-  </code></pre>
+  <pre><code>npm run dev</code></pre>
   
   <p>A aplicação estará disponível em <a href="http://localhost:5173">http://localhost:5173</a>.</p>
   
